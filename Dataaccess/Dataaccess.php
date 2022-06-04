@@ -1,6 +1,6 @@
 <?php
 
-class Dataacess
+class Dataaccess
 {
     public static  function connextion()
     {

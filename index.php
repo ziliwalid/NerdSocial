@@ -53,7 +53,7 @@ include_once 'Models/User.php';
 
                     session_start();
                     $_SESSION['clog']= $mail;
-                    header("location:GUI/UserInterface.php");
+                    header("location:GUI/Home.php");
 
                 }
 
@@ -113,7 +113,7 @@ include_once 'Models/User.php';
     }
     .geekLogo{
         margin-top: 210px;
-        margin-left:40% ;
+        margin-left:30% ;
         font-size: 60px;
     }
     .geekSocTEXT{
