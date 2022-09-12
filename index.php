@@ -1,5 +1,10 @@
 <?php
 include_once 'Models/User.php';
+session_start();
+
+if (isset($_SESSION['clog'])){
+    echo "<script>window.location.href='./GUI/Home.php'</script>";
+}
 ?>
 <!doctype html>
 <html lang="en">

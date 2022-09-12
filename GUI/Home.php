@@ -57,7 +57,7 @@ while ($row = $ClientData->fetch()){
     ?>
 
 
-    <div class="cards" onclick="window.location.href='./GUI/test.php'">
+    <div class="cards" onclick="window.location.href='./test.php?id=<?=$row[0]?>'">
         <div class="card__header">
             <img src="../images/<?=$row[4]?>" alt="card__image" class="card__image" width="600">
         </div>
@@ -126,6 +126,7 @@ while ($row = $ClientData->fetch()){
         -ms-overflow-style: none;  /* IE and Edge */
         scrollbar-width: none;  /* Firefox */
     }
+/*pour cacher le scrollbar*/
     .container::-webkit-scrollbar {
         display: none;
     }
@@ -148,7 +149,7 @@ while ($row = $ClientData->fetch()){
         background: linear-gradient(to right, #FFFFFF, #ECE9E6);
 
     }
-
+    /*card zoom in animation*/
     .cards:hover{
         transform: scale(1.1);
         cursor: pointer;
